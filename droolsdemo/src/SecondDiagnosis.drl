@@ -1,0 +1,21 @@
+
+package cn.lee.demo.drools.rule
+
+import cn.lee.demo.drools.model.SecondDiagnosis;
+import cn.lee.demo.drools.model.FirstDiagnosis;
+
+global java.util.List list
+
+rule "parts equals"
+lock-on-active true
+    dialect "mvel"
+	when
+	    fd :FirstDiagnosis()
+		s : SecondDiagnosis( parts != fd.parts)
+	then
+	modify (s) { wrongMsg += "parts not equals"};
+	//System.out.println(fd);
+	//System.out.println( s.toString() );
+end
+
+

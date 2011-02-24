@@ -1,0 +1,51 @@
+<component name="libraryTable">
+  <library name="3.0.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/droolsdemo/lib/spring-core.jar!/" />
+      <root url="jar://$PROJECT_DIR$/droolsdemo/lib/spring-asm.jar!/" />
+      <root url="jar://$PROJECT_DIR$/droolsdemo/lib/spring-beans.jar!/" />
+      <root url="jar://$PROJECT_DIR$/droolsdemo/lib/spring-context.jar!/" />
+      <root url="jar://$PROJECT_DIR$/droolsdemo/lib/spring-expression.jar!/" />
+      <root url="jar://$PROJECT_DIR$/droolsdemo/lib/spring-aop.jar!/" />
+      <root url="jar://$PROJECT_DIR$/droolsdemo/lib/spring-aspects.jar!/" />
+      <root url="jar://$PROJECT_DIR$/droolsdemo/lib/spring-tx.jar!/" />
+      <root url="jar://$PROJECT_DIR$/droolsdemo/lib/spring-instrument.jar!/" />
+      <root url="jar://$PROJECT_DIR$/droolsdemo/lib/spring-jdbc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/droolsdemo/lib/spring-jms.jar!/" />
+      <root url="jar://$PROJECT_DIR$/droolsdemo/lib/spring-orm.jar!/" />
+      <root url="jar://$PROJECT_DIR$/droolsdemo/lib/spring-oxm.jar!/" />
+      <root url="jar://$PROJECT_DIR$/droolsdemo/lib/commons-logging.jar!/" />
+      <root url="jar://$PROJECT_DIR$/droolsdemo/lib/aopalliance.jar!/" />
+      <root url="jar://$PROJECT_DIR$/droolsdemo/lib/hibernate.jar!/" />
+      <root url="jar://$PROJECT_DIR$/droolsdemo/lib/spring-web.jar!/" />
+      <root url="jar://$PROJECT_DIR$/droolsdemo/lib/c3p0-0.9.1.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/droolsdemo/lib/spring-webmvc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/droolsdemo/lib/javax.servlet.jar!/" />
+      <root url="jar://$PROJECT_DIR$/droolsdemo/lib/jta.jar!/" />
+      <root url="jar://$PROJECT_DIR$/droolsdemo/lib/jstl.jar!/" />
+      <root url="jar://$PROJECT_DIR$/droolsdemo/lib/dom4j.jar!/" />
+      <root url="jar://$PROJECT_DIR$/droolsdemo/lib/commons-beanutils-1.8.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/droolsdemo/lib/commons-io.jar!/" />
+      <root url="jar://$PROJECT_DIR$/droolsdemo/lib/commons-digester-1.7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/droolsdemo/lib/commons-collections.jar!/" />
+      <root url="jar://$PROJECT_DIR$/droolsdemo/lib/commons-collections-3.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/droolsdemo/lib/ehcache-1.4.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/droolsdemo/lib/commons-lang-2.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/droolsdemo/lib/backport-util-concurrent-3.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/droolsdemo/lib/antlr-2.7.6rc1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/droolsdemo/lib/asm.jar!/" />
+      <root url="jar://$PROJECT_DIR$/droolsdemo/lib/cglib.jar!/" />
+      <root url="jar://$PROJECT_DIR$/droolsdemo/lib/drools/xstream-1.3.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/droolsdemo/lib/drools/org.eclipse.jdt.core_3.5.2.v_981_R35x.jar!/" />
+      <root url="jar://$PROJECT_DIR$/droolsdemo/lib/drools/mvel2-2.0.16.jar!/" />
+      <root url="jar://$PROJECT_DIR$/droolsdemo/lib/drools/drools-compiler-5.1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/droolsdemo/lib/drools/drools-core-5.1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/droolsdemo/lib/drools/foxtrot-2.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/droolsdemo/lib/drools/jgoodies-forms-1.0.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/droolsdemo/lib/drools/antlr-runtime-3.1.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/droolsdemo/lib/drools/drools-api-5.1.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

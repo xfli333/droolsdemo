@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="cn.lee.demo.drools.model.SecondDiagnosis" table="SecondDiagnosis">
+        <id name="id" column="ID" type="long">
+            <generator class="native">
+                <param name="sequence">sd_sequence</param>
+                <param name="parameters">START WITH 1000</param>
+            </generator>
+        </id>
+        <version name="version" column="VERSION" type="long"/>
+
+
+        <property name="identityCard" type="string">
+            <column name="IDENTITY_CARD" length="20" not-null="true" unique-key="UK_SD"/>
+        </property>
+
+        <property name="name" type="string">
+            <column name="NAME" length="20"/>
+        </property>
+
+        <property name="parts" type="string">
+            <column name="parts" length="20"/>
+        </property>
+
+    </class>
+</hibernate-mapping>

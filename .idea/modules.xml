@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://F:/私活代码等等/nanjin/drools-5.1.1-examples/drools-examples/drools-examples-drl/drools-examples-drl.iml" filepath="F:/私活代码等等/nanjin/drools-5.1.1-examples/drools-examples/drools-examples-drl/drools-examples-drl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/droolsdemo/droolsdemo.iml" filepath="$PROJECT_DIR$/droolsdemo/droolsdemo.iml" />
+    </modules>
+  </component>
+</project>
+

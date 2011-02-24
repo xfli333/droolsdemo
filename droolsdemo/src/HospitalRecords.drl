@@ -1,0 +1,26 @@
+package cn.lee.demo.drools.rule
+
+import cn.lee.demo.drools.model.HospitalRecords;
+
+global java.util.List list
+
+rule "no menstrual"
+lock-on-active true
+    dialect "mvel"
+	when
+		h : HospitalRecords(sex!="女" && menstrual !=null && menstrual !="")
+	then
+	modify (h) { wrongMsg += "非女时，没有 menstrual<br>"};
+	System.out.println( h.toString() );
+end
+
+
+rule "no fertility"
+lock-on-active true
+    dialect "mvel"
+	when
+		h : HospitalRecords(sex!="女" && fertility !=null && fertility !="")
+	then
+	modify (h) { wrongMsg += "非女时，没有 fertility<br>"};
+	System.out.println(h.toString() );
+end
