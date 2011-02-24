@@ -1,7 +1,7 @@
 <%@ page import="cn.lee.demo.drools.model.RuleModel" %>
 <%--
   Created by IntelliJ IDEA.
-  User: Lenovo
+  User: Lee
   Date: 10-12-8
   Time: 下午8:14
   To change this template use File | Settings | File Templates.
