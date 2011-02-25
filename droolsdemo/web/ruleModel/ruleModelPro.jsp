@@ -87,7 +87,7 @@
         <button type="button" value="新建" class="sexybutton" onclick="doPost('new')"><span><span><span
                 class="save">新建</span></span></span>
         </button>
-
+        <a href="<%=request.getContextPath()%>">返回</a>
     </form>
 </div>
 </body>

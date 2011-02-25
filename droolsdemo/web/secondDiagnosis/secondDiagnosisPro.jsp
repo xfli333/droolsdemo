@@ -14,17 +14,21 @@
 <body>
 
 <script type="text/javascript">
-        function doPost(url) {
-            document.form.action += url;
-            document.form.submit();
-        }
-   </script>
+    function doPost(url) {
+        document.form.action += url;
+        document.form.submit();
+    }
+</script>
 
 <div id="wrapper" class="centralPanel">
     <h3>上一张单数据(parts需一致)</h3>
+
     <p>identityCard:${secondDiagnosis.fd.identityCard}</p>
+
     <p>name:${secondDiagnosis.fd.name}</p>
+
     <p>parts:${secondDiagnosis.fd.parts}</p>
+
     <h1>${secondDiagnosis.ruleMsg}</h1>
     <font color="red">${secondDiagnosis.wrongMsg}</font>
     <hr width="97.5%" align="left">
@@ -35,7 +39,8 @@
             <tr>
                 <td>identityCard:</td>
                 <td>
-                    <input type="text" id="identityCard" name="identityCard" lang="20" value="${secondDiagnosis.identityCard}"/>
+                    <input type="text" id="identityCard" name="identityCard" lang="20"
+                           value="${secondDiagnosis.identityCard}"/>
                 </td>
                 <td>name:</td>
                 <td>
@@ -52,7 +57,7 @@
         <button type="button" value="保存" class="sexybutton" onclick="doPost('add')"><span><span><span
                 class="save">保存</span></span></span>
         </button>
-        
+        <a href="<%=request.getContextPath()%>">返回</a>
     </form>
 </div>
 </body>

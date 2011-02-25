@@ -55,6 +55,7 @@
         <button type="button" value="保存" class="sexybutton" onclick="doPost('add')"><span><span><span
                 class="save">保存</span></span></span>
         </button>
+        <a href="<%=request.getContextPath()%>">返回</a>
         
     </form>
 </div>

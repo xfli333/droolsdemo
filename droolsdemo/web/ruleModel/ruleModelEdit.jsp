@@ -16,16 +16,16 @@
 <body>
 
 <script type="text/javascript">
-        function doPost(url) {
-            document.form.action += url;
-            document.form.submit();
-        }
-   </script>
+    function doPost(url) {
+        document.form.action += url;
+        document.form.submit();
+    }
+</script>
 
 <%
-    RuleModel rm=(RuleModel)request.getAttribute("ruleModel");
-    String[] customizeRules= DroolsUtils.splitCustomizeRuleToArray(rm.getCustomizeRule());
-   
+    RuleModel rm = (RuleModel) request.getAttribute("ruleModel");
+    String[] customizeRules = DroolsUtils.splitCustomizeRuleToArray(rm.getCustomizeRule());
+
 %>
 
 <div id="wrapper" class="centralPanel">
@@ -41,12 +41,13 @@
                 </td>
                 <td>ruleType:</td>
                 <td>
-                   ${ruleModel.ruleType}
+                    ${ruleModel.ruleType}
             </tr>
             <tr>
 
                 <td>当前条件:</td>
-                <td><%=customizeRules[0]+"  "+DroolsUtils.symbolMap.get(customizeRules[1])+"  "+customizeRules[2]%></td>
+                <td><%=customizeRules[0] + "  " + DroolsUtils.symbolMap.get(customizeRules[1]) + "  " + customizeRules[2]%>
+                </td>
                 <td>自定义条件</td>
 
                 <td>
@@ -57,12 +58,12 @@
                         <option value=">" <%if(">".equals(customizeRules[1])){%>selected="true"<%}%>>大于</option>
                         <option value="<" <%if("<".equals(customizeRules[1])){%>selected="true"<%}%>>小于</option>
                     </select>
-                    <input type="text" id="ruleValue" name="ruleValue" value='<%=customizeRules[2]%>' />
-                    </td>
-                    <%--<input type="text" id="customizeRule" name="customizeRule" lang="20" value='${ruleModel.customizeRule}'/></td></td>--%>
-                </tr>
+                    <input type="text" id="ruleValue" name="ruleValue" value='<%=customizeRules[2]%>'/>
+                </td>
+                <%--<input type="text" id="customizeRule" name="customizeRule" lang="20" value='${ruleModel.customizeRule}'/></td></td>--%>
+            </tr>
             <tr>
-            
+
             <tr>
                 <td>ruleContent:</td>
                 <td colspan="3"><textarea rows="15" cols="120" id="ruleContent" name="ruleContent" readonly="true">
@@ -77,7 +78,7 @@
         </button>
 
 
-
+        <a href="<%=request.getContextPath()%>">返回</a>
     </form>
 </div>
 </body>

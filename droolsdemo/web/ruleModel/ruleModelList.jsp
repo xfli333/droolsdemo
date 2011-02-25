@@ -72,7 +72,7 @@
         <button type="button" value="维护规则" class="sexybutton" onclick="doPost('edit')"><span><span><span
                 class="save">维护规则</span></span></span>
         </button>
-
+         <a href="<%=request.getContextPath()%>">返回</a>
     </form>
 </div>
 </body>
