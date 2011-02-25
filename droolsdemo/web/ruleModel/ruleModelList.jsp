@@ -21,6 +21,7 @@
         document.form.action += url;
         document.form.submit();
     }
+   
 </script>
 
 <div id="wrapper" class="centralPanel">
@@ -32,6 +33,7 @@
                 <td></td>
                 <td>规则名称</td>
                 <td>规则类型</td>
+                <td>自定义规则</td>
                 <td>头文件</td>
                 <td>是否启用</td>
             </tr>
@@ -42,9 +44,11 @@
             %>
             <tr>
                 <td><input type="radio" name="id" value="<%=rm.getId()%>"></td>
-                <td><%=rm.getRoleName() %>
+                <td><%=rm.getRuleName() %>
                 </td>
-                <td><%=rm.getRoleType() %>
+                <td><%=rm.getRuleType() %>
+                </td>
+                <td><%=rm.getCustomizeRule() %>
                 </td>
                 <td><%=rm.isFirstRole() %>
                 </td>
@@ -63,6 +67,10 @@
 
         <button type="button" value="禁用规则" class="sexybutton" onclick="doPost('disable')"><span><span><span
                 class="save">禁用规则</span></span></span>
+        </button>
+
+        <button type="button" value="维护规则" class="sexybutton" onclick="doPost('edit')"><span><span><span
+                class="save">维护规则</span></span></span>
         </button>
 
     </form>

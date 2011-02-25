@@ -1,7 +1,7 @@
 <%@ page import="cn.lee.demo.drools.model.RuleModel" %>
 <%--
   Created by IntelliJ IDEA.
-  User: Lee
+  User: Lenovo
   Date: 10-12-8
   Time: 下午8:14
   To change this template use File | Settings | File Templates.
@@ -27,13 +27,13 @@
         <input type="hidden" name="version" value="${ruleModel.version}"/>
         <table>
             <tr>
-                <td>roleName:</td>
+                <td>ruleName:</td>
                 <td>
-                    <input type="text" id="roleName" name="roleName" lang="20" value="${ruleModel.roleName}"/>
+                    <input type="text" id="ruleName" name="ruleName" lang="20" value="${ruleModel.ruleName}"/>
                 </td>
-                <td>roleType:</td>
+                <td>ruleType:</td>
                 <td>
-                    <input type="text" id="roleType" name="roleType" lang="20" value="${ruleModel.roleType}"/></td>
+                    <input type="text" id="ruleType" name="ruleType" lang="20" value="${ruleModel.ruleType}"/></td>
             </tr>
 
             <tr>
@@ -65,9 +65,16 @@
                 %>
             </tr>
             <tr>
-                <td>roleContent:</td>
-                <td colspan="3"><textarea rows="15" cols="120" id="roleContent" name="roleContent">
-                    ${ruleModel.roleContent}
+
+                <td>当前条件:</td>
+                <td><%=ruleModel.getCustomizeRule()%></td>
+                <td>自定义条件</td>
+                <td><input type="text" id="customizeRule" name="customizeRule" lang="20" value="<%=ruleModel.getCustomizeRule()%>"/></td></td>
+                </tr>
+            <tr>
+                <td>ruleContent:</td>
+                <td colspan="3"><textarea rows="15" cols="120" id="ruleContent" name="ruleContent">
+                    ${ruleModel.ruleContent}
                 </textarea>
 
             </tr>

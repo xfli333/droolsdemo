@@ -20,13 +20,13 @@ public class BaseAction {
 
     protected String initActionRule(String ruleType){
         String ruleContent="";
-        String hql="from RuleModel rm where rm.roleType = ? and rm.actived = ?";
+        String hql="from RuleModel rm where rm.ruleType = ? and rm.actived = ?";
         List<RuleModel> rms=this.baseManager.findByQuery(hql,ruleType,true);
         for(RuleModel rm :rms){
             if(rm.isFirstRole()){
-                ruleContent=rm.getRoleContent()+ruleContent;
+                ruleContent=rm.getRuleContent()+ruleContent;
             }else{
-                ruleContent+=rm.getRoleContent();
+                ruleContent+=rm.getRuleContent().replace("自定义条件",rm.getCustomizeRule());
             }
         }
         return ruleContent;

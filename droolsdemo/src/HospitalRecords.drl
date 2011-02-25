@@ -3,8 +3,7 @@ package cn.lee.demo.drools.rule
 import cn.lee.demo.drools.model.HospitalRecords;
 
 global java.util.List list
-
-rule "no menstrual"
+                rule "no menstrual"
 lock-on-active true
     dialect "mvel"
 	when

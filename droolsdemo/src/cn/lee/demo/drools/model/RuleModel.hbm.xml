@@ -14,15 +14,17 @@
         <version name="version" column="VERSION" type="long"/>
        
 
-        <property name="roleName" type="string">
+        <property name="ruleName" type="string">
             <column name="roleName" length="20" not-null="true" unique-key="UK_RULEMODEL"/>
         </property>
 
-        <property name="roleType" type="string">
+        <property name="ruleType" type="string">
             <column name="ROLE_TYPE" length="20" not-null="true" unique-key="UK_RULEMODEL"/>
         </property>
-
-        <property name="roleContent" type="string">
+        <property name="customizeRule" type="string">
+            <column name="CUSTOMIZE_RULE" length="255"/>
+        </property>
+        <property name="ruleContent" type="string">
             <column name="ROLE_CONTENT" length="1000000"/>
         </property>
 

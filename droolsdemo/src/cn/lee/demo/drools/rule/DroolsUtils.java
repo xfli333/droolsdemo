@@ -2,9 +2,7 @@ package cn.lee.demo.drools.rule;
 
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
+import java.util.*;
 
 import org.drools.KnowledgeBase;
 import org.drools.KnowledgeBaseFactory;
@@ -26,6 +24,42 @@ import org.drools.runtime.StatefulKnowledgeSession;
  * Time: 下午11:55
  */
 public class DroolsUtils {
+
+    public static final Map<String, String> symbolMap = new HashMap<String, String>();
+
+    static {
+        symbolMap.put("==", "等于");
+        symbolMap.put(">", "大于");
+        symbolMap.put("<", "小于");
+        symbolMap.put("!=", "不等于");
+        symbolMap.put("等于", "==");
+        symbolMap.put("大于", ">");
+        symbolMap.put("小于", "<");
+        symbolMap.put("不等于", "!=");
+    }
+
+
+    public static String[] splitCustomizeRuleToArray(String customizeRule) {
+        String[] strings = new String[3];
+        for (String key : symbolMap.keySet()) {
+            if (customizeRule.indexOf(key) != -1) {
+                String[] strs = customizeRule.split(key);
+                strings[0] = strs[0];
+                strings[1] = key;
+                strings[2] = strs[1];
+                return strings;
+            }
+        }
+        return null;
+    }
+
+//    public static void main(String[] args) {
+//        String testStr = "sex!=\"女\"";
+//        for (String str : DroolsUtils.splitCustomizeRuleToArray(testStr)) {
+//            System.out.println(str);
+//        }
+//
+//    }
 
     public static StatefulKnowledgeSession createKnowledgeSession(String ruleContent) {
         final KnowledgeBuilder kbuilder = KnowledgeBuilderFactory

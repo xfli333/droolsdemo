@@ -7,11 +7,13 @@ package cn.lee.demo.drools.model;
  * Time: 下午1:04
  */
 public class RuleModel extends Model{
-    private String roleName;
+    private String ruleName;
 
-    private String roleType;
+    private String ruleType;
 
-    private String roleContent;
+    private String ruleContent;
+
+    private String customizeRule="";
 
     private boolean firstRole=false;
 
@@ -27,41 +29,41 @@ public class RuleModel extends Model{
 
         RuleModel ruleModel = (RuleModel) o;
 
-        if (roleName != null ? !roleName.equals(ruleModel.roleName) : ruleModel.roleName != null) return false;
-        if (roleType != null ? !roleType.equals(ruleModel.roleType) : ruleModel.roleType != null) return false;
+        if (ruleName != null ? !ruleName.equals(ruleModel.ruleName) : ruleModel.ruleName != null) return false;
+        if (ruleType != null ? !ruleType.equals(ruleModel.ruleType) : ruleModel.ruleType != null) return false;
 
         return true;
     }
 
     @Override
     public int hashCode() {
-        int result = roleName != null ? roleName.hashCode() : 0;
-        result = 31 * result + (roleType != null ? roleType.hashCode() : 0);
+        int result = ruleName != null ? ruleName.hashCode() : 0;
+        result = 31 * result + (ruleType != null ? ruleType.hashCode() : 0);
         return result;
     }
 
-    public String getRoleName() {
-        return roleName;
+    public String getRuleName() {
+        return ruleName;
     }
 
-    public void setRoleName(String roleName) {
-        this.roleName = roleName;
+    public void setRuleName(String ruleName) {
+        this.ruleName = ruleName;
     }
 
-    public String getRoleType() {
-        return roleType;
+    public String getRuleType() {
+        return ruleType;
     }
 
-    public void setRoleType(String roleType) {
-        this.roleType = roleType;
+    public void setRuleType(String ruleType) {
+        this.ruleType = ruleType;
     }
 
-    public String getRoleContent() {
-        return roleContent;
+    public String getRuleContent() {
+        return ruleContent;
     }
 
-    public void setRoleContent(String roleContent) {
-        this.roleContent = roleContent;
+    public void setRuleContent(String ruleContent) {
+        this.ruleContent = ruleContent;
     }
 
     public boolean isFirstRole() {
@@ -78,6 +80,14 @@ public class RuleModel extends Model{
 
     public void setActived(boolean actived) {
         this.actived = actived;
+    }
+
+    public String getCustomizeRule() {
+        return customizeRule;
+    }
+
+    public void setCustomizeRule(String customizeRule) {
+        this.customizeRule = customizeRule;
     }
 }
 

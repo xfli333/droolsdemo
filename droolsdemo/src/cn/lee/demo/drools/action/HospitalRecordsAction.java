@@ -24,6 +24,7 @@ public class HospitalRecordsAction extends BaseAction {
     @RequestMapping(value = "/add", method = RequestMethod.POST)
     public String saveOrUpdate(HospitalRecords hospitalRecords, HttpServletRequest request) {
         ruleContent=initActionRule("rule1");
+        System.out.println(ruleContent);
         final StatefulKnowledgeSession ksession = DroolsUtils.createKnowledgeSession(ruleContent);
         ksession.insert(hospitalRecords);
         ksession.fireAllRules();

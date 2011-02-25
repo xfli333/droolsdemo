@@ -21,12 +21,12 @@ import javax.servlet.http.HttpServletRequest;
 @RequestMapping("/diagnosis")
 public class SecondDiagnosisAction extends BaseAction {
 
-    private  String roleContent="";
+    private String roleContent = "";
 
     @RequestMapping(value = "/add", method = RequestMethod.POST)
     public String saveOrUpdate(SecondDiagnosis secondDiagnosis, HttpServletRequest request) {
-        roleContent=this.initActionRule("rule2");
-        
+        roleContent = this.initActionRule("rule2");
+
         FirstDiagnosis fd = new FirstDiagnosis();
         fd.setIdentityCard("id123");
         fd.setName("user name");
@@ -40,7 +40,7 @@ public class SecondDiagnosisAction extends BaseAction {
         ksession.fireAllRules();
         ksession.dispose();
 
-        
+
         if (secondDiagnosis.getWrongMsg() == null || "".equals(secondDiagnosis.getWrongMsg())) {
             this.baseManager.store(secondDiagnosis);
         } else {
